@@ -37,7 +37,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("6_337fj")
 }],
-"loop": true,
+"loop": false,
 "name": &"idle",
 "speed": 5.0
 }, {
@@ -99,8 +99,10 @@ editor_draw_limits = true
 
 [node name="anim" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_84s3t")
-animation = &"run"
-autoplay = "idle"
-frame_progress = 0.261981
+animation = &"idle"
+
+[node name="anim2" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_84s3t")
+animation = &"idle"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
